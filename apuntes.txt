@@ -1,0 +1,15 @@
+--------------backend----------------
+1-create venv python -m venv venv
+2-install django, djangorestframework, django-cors-headers, django-js-urls
+3-en el precommit hacer que se actualize el requiremets.txt y ponerlo en git.
+4-create projects django django-admin startproject project (venv active)
+5-***create settings dev
+6-create app residencia python ../manage.py startapp residencia
+
+
+
+
+------------------frontend---------------------
+1-Install nodejs
+2-Create frontend app npx create-react-app frontend
+3-Install react-redux, redux-toolkit(include redux), react-router-dom, material-react, icons-material
