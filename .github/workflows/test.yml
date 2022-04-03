@@ -27,8 +27,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: yarn install    
-      - run: yarn build
+          cache: 'yarn'
+          cache-dependency-path: 'frontend/'
+      - run: yarn --cwd /home/runner/work/django-react/django-react/frontend/ install
+      - run: yarn --cwd /home/runner/work/django-react/django-react/frontend/ build
       - uses: EndBug/add-and-commit@v9
-        with:
-          push: false
