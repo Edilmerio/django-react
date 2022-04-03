@@ -30,7 +30,7 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: 'frontend/'
       - run: yarn install
-      - run: yarn build
+      - run: yarn run build
       - uses: EndBug/add-and-commit@v9
         with:
           push: false
