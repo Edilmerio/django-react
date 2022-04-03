@@ -32,5 +32,3 @@ jobs:
       - run: yarn --cwd /home/runner/work/django-react/django-react/frontend/ install
       - run: yarn --cwd /home/runner/work/django-react/django-react/frontend/ build
       - uses: EndBug/add-and-commit@v9
-        with:
-          push: false
