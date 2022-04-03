@@ -30,7 +30,7 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: 'frontend/'
       - run: yarn install
-      - run: yarn run build
+      - run: yarn --cwd /home/runner/work/django-react/django-react/frontend/ build
       - uses: EndBug/add-and-commit@v9
         with:
           push: false
